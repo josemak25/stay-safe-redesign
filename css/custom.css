@@ -1,0 +1,15 @@
+.cases-container {
+  padding: 2rem 1rem;
+}
+
+.cases-row {
+  align-items: center;
+}
+
+.case-img {
+  width: 100%;
+}
+
+.case-img img {
+  width: 100%;
+}
