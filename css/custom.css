@@ -6,10 +6,18 @@
   align-items: center;
 }
 
+.cases-row .case-for-mask {
+  order: -1;
+}
+
 .case-img {
   width: 100%;
 }
 
 .case-img img {
   width: 100%;
+}
+
+.ftco-animated .case-img {
+  background-color: #edeef3;
 }
