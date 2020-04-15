@@ -1,0 +1,71 @@
+header .colorlib-navbar-brand .colorlib-logo {
+  padding: 4px;
+  display: block;
+  text-align: center;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+header .colorlib-navbar-brand .colorlib-logo img {
+  width: 120px;
+}
+
+header .colorlib-navbar-brand .colorlib-logo:hover {
+  text-decoration: none !important;
+}
+
+header .colorlib-navbar-brand .colorlib-logo:active,
+header .colorlib-navbar-brand .colorlib-logo:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+@media (min-width: 767px) {
+  header .colorlib-navbar-brand .colorlib-logo img {
+    width: 200px;
+  }
+
+  header .colorlib-navbar-brand .colorlib-logo {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .custom-desktop-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .colorlib-nav-toggle {
+    display: none;
+  }
+
+  .custom-desktop-menu {
+    display: flex;
+    height: 100%;
+  }
+
+  .custom-desktop-menu ul {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .custom-desktop-menu ul li {
+    list-style: none;
+  }
+
+  .custom-desktop-menu ul li a {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 3px 0px;
+  }
+
+  .custom-desktop-menu ul li a:hover {
+    transition: ease all 0.2s;
+    border-bottom: 3px #35e78e solid;
+  }
+}
