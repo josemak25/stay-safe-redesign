@@ -184,3 +184,12 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.footer-logo {
+  width: 200px;
+  display: flex;
+}
+
+.footer-logo img {
+  width: 100%;
+}
