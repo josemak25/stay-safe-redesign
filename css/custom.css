@@ -86,3 +86,12 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .case-img img {
   width: 100%;
 }
+
+.footer-logo {
+  width: 200px;
+  display: flex;
+}
+
+.footer-logo img {
+  width: 100%;
+}
