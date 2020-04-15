@@ -30,6 +30,12 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .cases-row .case-for-mask {
+    order: -1;
+  }
+}
+
 @media (max-width: 1025px) {
   .custom-desktop-menu {
     display: none;
@@ -76,10 +82,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
 .cases-row {
   align-items: center;
-}
-
-.cases-row .case-for-mask {
-  order: -1;
 }
 
 .case-img {
