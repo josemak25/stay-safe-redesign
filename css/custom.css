@@ -175,3 +175,11 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   content: "";
   background: #94021fc9;
 }
+
+.ftco-section .container .sponsors-logos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px red solid;
+}
