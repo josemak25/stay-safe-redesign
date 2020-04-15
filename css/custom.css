@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header .colorlib-navbar-brand .colorlib-logo {
   padding: 4px;
   display: block;
