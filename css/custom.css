@@ -21,3 +21,75 @@
 .ftco-animated .case-img {
   background-color: #edeef3;
 }
+
+.button-degree .btn {
+  position: relative;
+  background: #94021f;
+  border: transparent;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-degree .btn:after {
+  content: "";
+  position: inherit;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  overflow: visible;
+  width: 0px;
+  height: 0px;
+  z-index: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  background-color: #fff;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .button-degree .btn:after {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+.button-degree .btn:hover:after {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  background-color: #fff;
+}
+
+.flaticon-gym-1::before {
+  content: "";
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/shopping-cart.svg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.flaticon-gym-2::before {
+  content: "";
+  background-image: url("../images/home.svg");
+}
+
+.services .icon span:after {
+  position: absolute;
+  content: "";
+  background: #94021f;
+}
