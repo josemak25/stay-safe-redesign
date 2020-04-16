@@ -11536,3 +11536,33 @@ textarea.form-control {
   filter: grayscale(100%);
   background: #fff;
 }
+
+#ft-safe {
+  color: #fff;
+}
+
+.mobile-carousel {
+  display: none !important;
+}
+.desktop-carousel {
+  display: block !important;
+}
+
+@media (max-width: 780px) {
+  .desktop-carousel {
+    display: none !important;
+  }
+  .mobile-carousel {
+    display: block !important;
+  }
+  .ftco-section .container .sponsors-logos {
+    justify-content: center !important;
+  }
+  #ft-h4 {
+    display: flex;
+    flex-direction: column;
+  }
+  #ft-h4 p {
+    font-size: 5rem;
+  }
+}
