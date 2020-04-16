@@ -58,7 +58,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .button-degree .btn:after {
-  content: "";
+  content: '';
   position: inherit;
   left: 0;
   right: 0;
@@ -88,34 +88,38 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .flaticon-gym-1::before {
-  content: "";
+  content: '';
   display: inline-flex;
   width: 40px;
   height: 40px;
-  background-image: url("../images/shopping-cart.svg");
+  background-image: url('../images/shopping-cart.svg');
   background-position: center center;
   background-size: cover;
 }
 
 .flaticon-gym-2::before {
-  content: "";
-  background-image: url("../images/home.svg");
+  content: '';
+  background-image: url('../images/home.svg');
 }
 
 .flaticon-gym-3::before {
-  content: "";
-  background-image: url("../images/sew.svg");
+  content: '';
+  background-image: url('../images/sew.svg');
 }
 
 .flaticon-gym-4::before {
-  content: "";
-  background-image: url("../images/sponsor.svg");
+  content: '';
+  background-image: url('../images/sponsor.svg');
 }
 
 .services .icon span:after {
   position: absolute;
-  content: "";
+  content: '';
   background: #94021fc9;
+}
+
+.ftco-section {
+  padding: 2em 0;
 }
 
 .ftco-section .container .sponsors-logos {
@@ -125,10 +129,25 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   align-items: center;
   flex-wrap: wrap;
 }
-
+.pb-5 {
+  padding-bottom: 0 !important;
+}
+.mb-5 {
+  margin-bottom: 1rem !important;
+}
+.spons-row {
+  margin-bottom: 3rem !important;
+}
+.spons-section {
+  padding: 3rem 0 !important;
+}
 .footer-logo {
   width: 200px;
   display: flex;
+}
+
+.ftco-section {
+  padding: 5em 0;
 }
 
 .footer-logo img {
@@ -148,6 +167,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 @media (min-width: 767px) {
+  .ftco-section {
+    padding: 2em 0;
+  }
   header .colorlib-navbar-brand .colorlib-logo img {
     width: 200px;
   }
@@ -158,6 +180,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
   .ftco-section .container .sponsors-logos img {
     width: 150px;
+  }
+  .spons-section {
+    padding: 7rem 0 !important;
   }
 }
 
