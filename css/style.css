@@ -11548,6 +11548,10 @@ textarea.form-control {
   display: block !important;
 }
 
+.ftco-footer {
+  background: rgb(148, 2, 31) !important;
+}
+
 @media (max-width: 780px) {
   .desktop-carousel {
     display: none !important;
