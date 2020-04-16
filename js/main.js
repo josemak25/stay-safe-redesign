@@ -277,20 +277,4 @@ $(document).ready(function ($) {
       duration: 300, // don't foget to change the duration also in CSS
     },
   });
-
-  $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
-    disableOn: 700,
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false,
-  });
-
-  $("#appointment_date").datepicker({
-    format: "m/d/yyyy",
-    autoclose: true,
-  });
-  $("#appointment_time").timepicker();
 });
