@@ -1,3 +1,9 @@
 .table-section {
   margin: 10rem 0px;
+  padding: 0px 1rem;
+}
+
+table tr th {
+  border-top: 0px !important;
+  border-bottom: 0px !important;
 }
