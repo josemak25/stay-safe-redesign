@@ -110,25 +110,19 @@
       <div class="ftco-section filter-section">
         <div class="dropdown">
           <div class="select">
-            <span>Choose State</span>
+            <span>Select State</span>
             <i class="fa fa-chevron-left"></i>
           </div>
           <input type="hidden" name="state" id="selected-state" />
-          <ul class="dropdown-menu">
-            <li id="abuja">Abuja</li>
-            <li id="lagos">Lagos</li>
-          </ul>
+          <ul class="dropdown-menu state-dropdown"></ul>
         </div>
         <div class="dropdown">
           <div class="select">
-            <span>Choose LGA</span>
+            <span>Select LGA</span>
             <i class="fa fa-chevron-left"></i>
           </div>
           <input type="hidden" name="lga" id="selected-lga" />
-          <ul class="dropdown-menu">
-            <li id="isolo">Isolo</li>
-            <li id="ikeja">Ikeja</li>
-          </ul>
+          <ul class="dropdown-menu lga-dropdown"></ul>
         </div>
         <div class="button-degree button-degree-dark-bg dropdown-submit">
           <span class="btn px-4 py-3">Submit</span>
@@ -147,7 +141,7 @@
       <section class="ftco-section table-section">
         <div class="table-responsive-md table-container">
           <table
-            id="example"
+            id="result-table"
             class="table table-striped table-bordered"
             style="width: 100%;"
           >
@@ -163,30 +157,7 @@
                 <th>Capacity</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Phone Number</th>
-                <th>E-mail Address</th>
-                <th>Company Name</th>
-                <th>LGA</th>
-                <th>State</th>
-                <th>Capacity</th>
-              </tr>
-            </tfoot>
+            <tbody></tbody>
           </table>
         </div>
       </section>
