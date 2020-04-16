@@ -100,7 +100,7 @@
           </div>
         </div>
       </header>
-      <section class="home-slider owl-carousel">
+      <section class="home-slider owl-carousel desktop-carousel">
         <div
           class="slider-item"
           style="background-image: url('images/bg-01.jpg');"
@@ -127,7 +127,57 @@
         </div>
         <div
           class="slider-item"
-          style="background-image: url('images/bg-02.jpg');"
+          style="background-image: url('images/bg-02.jpg');;"
+        >
+          <div class="overlay"></div>
+          <div class="container">
+            <div
+              class="row slider-text align-items-center"
+              data-scrollax-parent="true"
+            >
+              <div
+                class="col-md-7 col-sm-12 ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <h1
+                  class="mb-3"
+                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+                >
+                  <!-- Wake to your full potential -->
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-slider owl-carousel mobile-carousel">
+        <!-- <div
+          class="slider-item"
+          style="background-image: url('images/bg-01.jpg');"
+        >
+          <div class="overlay"></div>
+          <div class="container">
+            <div
+              class="row slider-text align-items-center"
+              data-scrollax-parent="true"
+            >
+              <div
+                class="col-md-7 col-sm-12 ftco-animate"
+                data-scrollax=" properties: { translateY: '70%' }"
+              >
+                <h1
+                  class="mb-3"
+                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+                >
+                  Experience the best workout humanly possible
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div
+          class="slider-item"
+          style="background-image: url('images/bg-02-mobile.jpg');;"
         >
           <div class="overlay"></div>
           <div class="container">
@@ -359,10 +409,19 @@
           </div>
           <div class="row">
             <div class="sponsors-logos slider">
-              <div class="slide"><img src="images/image1.png" /></div>
-              <div class="slide"><img src="images/image2.png" /></div>
+              <div class="slide">
+                <img
+                  style="width: 229.5px; height: 70px; background: #2d9449; padding: 10px;"
+                  src="images/logo-light.webp"
+                />
+              </div>
+              <!-- <div class="slide"><img src="images/image2.png" /></div>
               <div class="slide"><img src="images/image3.png" /></div>
               <div class="slide"><img src="images/image4.png" /></div>
+              <div class="slide"><img src="images/image5.png" /></div>
+              <div class="slide"><img src="images/image6.png" /></div>
+              <div class="slide"><img src="images/image7.png" /></div>
+              <div class="slide"><img src="images/image8.png" /></div> -->
             </div>
           </div>
         </div>
@@ -379,10 +438,13 @@
               >
                 <h4
                   class="mb-4"
+                  id="ft-h4"
                   style="font-family: Satisfy, Arial, Helvetica, sans-serif; font-size: 7rem; display: flex; width: 100%; justify-content: center; align-items: center;"
                 >
-                  <img class="footer-img" src="images/showmasks.png" />Stay
-                  Safe.
+                  <img class="footer-img" src="images/showmasks.png" />
+                  <p id="ft-safe">
+                    Stay Safe.
+                  </p>
                 </h4>
                 <div
                   class="footer-logo justify-content-center"
