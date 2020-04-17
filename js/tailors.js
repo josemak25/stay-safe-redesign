@@ -31,12 +31,11 @@ $(document).ready(async () => {
       localStorage.setItem('tn', JSON.stringify(data));
 
       const stateDropDown = document.querySelector('.state-dropdown');
-      const lgaDropDown = document.querySelector('.lga-dropdown');
+
       let states = [];
       let lgas = [];
       for (let i in data) {
         states.push(data[i].state);
-        lgas.push(data[i].lga);
       }
 
       states = [...new Set(states)].sort();
@@ -45,11 +44,6 @@ $(document).ready(async () => {
       for (let k of states) {
         stateDropDown.innerHTML += `<li class="dropdown-item" id="${k}">${k}</li>`;
       }
-      for (let l of lgas) {
-        lgaDropDown.innerHTML += `<li class="dropdown-item" id="${l}">${l}</li>`;
-      }
-
-      // $("#example").DataTable({ data });
     },
   });
 
@@ -80,6 +74,28 @@ $(document).ready(async () => {
       .parents('.dropdown')
       .find('input')
       .attr('value', $(this).attr('id'));
+
+    let selectedValue = $(this).text();
+    const data = JSON.parse(localStorage.getItem('tn'));
+
+    let lgaRet = data.filter(item => item.state == selectedValue);
+    let lgas = [];
+    if (lgaRet.length) {
+      for (let i in lgaRet) {
+        lgas.push(lgaRet[i].lga);
+      }
+    } else {
+      try {
+        lgaDropDown.innerHTML += `<li class="dropdown-item" id="lga">No LGAs available</li>`;
+      } catch (error) {}
+    }
+    const lgaDropDown = document.querySelector('.lga-dropdown');
+
+    lgas = [...new Set(lgas)].sort();
+
+    for (let l of lgas) {
+      lgaDropDown.innerHTML += `<li class="dropdown-item" id="${l}">${l}</li>`;
+    }
   });
 
   /*End Dropdown Menu*/
