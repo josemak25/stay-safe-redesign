@@ -92,7 +92,7 @@ $(document).ready(async () => {
     const lgaDropDown = document.querySelector('.lga-dropdown');
 
     lgas = [...new Set(lgas)].sort();
-
+    lgaDropDown.innerHTML = '';
     for (let l of lgas) {
       lgaDropDown.innerHTML += `<li class="dropdown-item" id="${l}">${l}</li>`;
     }
